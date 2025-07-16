@@ -14,7 +14,7 @@ AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
 // make true if you want auto reply on status 
 AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
 // make true if you want auto reply on status 
-AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS BY CRISS-AI 🤍*",
+AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*𝑺𝑬𝑬𝑵 𝒀𝑶𝑼𝑹 𝑺𝑻𝑨𝑻𝑼𝑺 𝑩𝒀 𝑩𝑰𝑵𝑶𝑹𝑰 🤍*",
 // set the auto reply massage on status reply  
 WELCOME: process.env.WELCOME || "false",
 // true if want welcome and goodbye msg in groups    
@@ -24,13 +24,13 @@ ANTI_LINK: process.env.ANTI_LINK || "false",
 // make anti link true,false for groups 
 MENTION_REPLY: process.env.MENTION_REPLY || "false",
 // make true if want auto voice reply if someone menetion you 
-MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://res.cloudinary.com/dgy2dutjs/image/upload/v1751624587/url.crissvevo.co.tz/IMG_2353_fze42l.jpg",
+MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/x4nl3j.jpg",
 // add custom menu and mention reply image url
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
-BOT_NAME: process.env.BOT_NAME || "CRISS-AI",
+BOT_NAME: process.env.BOT_NAME || "𝑩𝑰𝑵𝑶𝑹𝑰",
 // add bot namw here for menu
-STICKER_NAME: process.env.STICKER_NAME || "CRISS-AI",
+STICKER_NAME: process.env.STICKER_NAME || "XQUEEN",
 // type sticker pack name 
 CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
 // make this true for custum emoji react    
@@ -38,15 +38,15 @@ CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️�
 // chose custom react emojis by yourself 
 DELETE_LINKS: process.env.DELETE_LINKS || "true",
 // automatic delete links witho remove member 
-OWNER_NUMBER: process.env.OWNER_NUMBER || "255766263739",
+OWNER_NUMBER: process.env.OWNER_NUMBER || "919692216903",
 // add your bot owner number
-OWNER_NAME: process.env.OWNER_NAME || "ᴄʀɪss ᴠᴇᴠᴏ",
+OWNER_NAME: process.env.OWNER_NAME || "𝑩𝑰𝑵𝑶𝑹𝑰",
 // add bot owner name
-DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʀɪss ᴠᴇᴠᴏ*",
+DESCRIPTION: process.env.DESCRIPTION || "*© 𝑷𝑶𝑾𝑬𝑹 𝑩𝒀 𝑩𝑰𝑵𝑶𝑹𝑰*",
 // add bot owner name    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://res.cloudinary.com/dgy2dutjs/image/upload/v1751624587/url.crissvevo.co.tz/IMG_2353_fze42l.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/x4nl3j.jpg",
 // add img for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "> Zinda Hun Yar *CRISS-AI*⚡",
+LIVE_MSG: process.env.LIVE_MSG || "> Zinda Hun Yar *𝑩𝑰𝑵𝑶𝑹𝑰*⚡",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
