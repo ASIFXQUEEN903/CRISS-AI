@@ -43,23 +43,11 @@ cmd({
 ╰──────────────┈⊷
 > ${config.DESCRIPTION}`;
 
-        const contextInfo = {
-            mentionedJid: [m.sender],
-            forwardingScore: 999,
-            isForwarded: true,
-            forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363417599637828@newsletter',
-                newsletterName: config.OWNER_NAME,
-                serverMessageId: 143
-            }
-        };
-
         const sentMsg = await conn.sendMessage(
             from,
             {
-                image: { url: config.MENU_IMAGE_URL || 'https://res.cloudinary.com/dgy2dutjs/image/upload/v1751624587/url.crissvevo.co.tz/IMG_2353_fze42l.jpg' },
-                caption: menuCaption,
-                contextInfo: contextInfo
+                image: { url: 'https://files.catbox.moe/x4nl3j.jpg' },
+                caption: menuCaption
             },
             { quoted: mek }
         );
@@ -375,9 +363,8 @@ cmd({
                     await conn.sendMessage(
                         senderID,
                         {
-                            image: { url: config.MENU_IMAGE_URL || 'https://res.cloudinary.com/dgy2dutjs/image/upload/v1751624587/url.crissvevo.co.tz/IMG_2353_fze42l.jpg' },
-                            caption: selectedMenu.content,
-                            contextInfo: contextInfo
+                            image: { url: 'https://files.catbox.moe/x4nl3j.jpg' },
+                            caption: selectedMenu.content
                         },
                         { quoted: receivedMsg }
                     );
@@ -390,8 +377,7 @@ cmd({
                     await conn.sendMessage(
                         senderID,
                         {
-                            text: `❌ *Invalid Option!* ❌\n\nPlease reply with a number between 1-10 to select a menu.\n\n*Example:* Reply with "1" for Download Menu\n\n> ${config.DESCRIPTION}`,
-                            contextInfo: contextInfo
+                            text: `❌ *Invalid Option!* ❌\n\nPlease reply with a number between 1-10 to select a menu.\n\n*Example:* Reply with "1" for Download Menu\n\n> ${config.DESCRIPTION}`
                         },
                         { quoted: receivedMsg }
                     );
