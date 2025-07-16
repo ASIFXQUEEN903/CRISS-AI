@@ -29,17 +29,7 @@ async (conn, mek, m, { from, sender, reply }) => {
 
         await conn.sendMessage(from, {
             image: { url: config.MENU_IMAGE_URL },
-            caption: status,
-            contextInfo: {
-                mentionedJid: [m.sender],
-                forwardingScore: 1000,
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363417599637828@newsletter',
-                    newsletterName: 'CRISS AI',
-                    serverMessageId: 143
-                }
-            }
+            caption: status
         }, { quoted: mek });
 
     } catch (e) {
@@ -47,4 +37,3 @@ async (conn, mek, m, { from, sender, reply }) => {
         reply(`An error occurred: ${e.message}`);
     }
 });
-
