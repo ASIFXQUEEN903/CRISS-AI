@@ -59,23 +59,16 @@ ${translatedTafsirUrdu.text}\n
 ${translatedTafsirEnglish.text}`;
 
     await conn.sendMessage(
-      from,
-      {
-        image: { url: `https://res.cloudinary.com/dgy2dutjs/image/upload/v1751624587/url.crissvevo.co.tz/IMG_2353_fze42l.jpg` },
-                caption: dec,
-                contextInfo: {
-                    mentionedJid: [m.sender],
-                    forwardingScore: 999,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363417599637828@newsletter',
-                        newsletterName: 'CRISS AI',
-                        serverMessageId: 143
-          }
-        }
-      },
-      { quoted: mek }
-    );
+  from,
+  {
+    image: { url: `https://files.catbox.moe/x4nl3j.jpg` },
+    caption: dec,
+    contextInfo: {
+      mentionedJid: [m.sender]  // optional, use only if you want to mention user
+    }
+  },
+  { quoted: mek }
+);
 
     if (json.data.recitation.full) {
       await conn.sendMessage(from, {
@@ -449,24 +442,16 @@ async (conn, mek, m, { from, quoted, body,isCmd, command, args, q, isGroup, send
 114. 🌐 An-Nas (Mankind) - الناس (انسانیت)`;
 
         await conn.sendMessage(
-            from,
-            {
-                image: { url: `https://files.catbox.moe/4ggu0a.jpg` },
-                caption: dec,
-                contextInfo: {
-                    mentionedJid: [m.sender],
-                    forwardingScore: 999,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363417599637828@newsletter',
-                        newsletterName: 'CRISS AI',
-                        serverMessageId: 143
-                    }
-                }
-            },
-            { quoted: mek }
-        );
-
+    from,
+    {
+        image: { url: `https://files.catbox.moe/x4nl3j.jpg` },
+        caption: dec,
+        contextInfo: {
+            mentionedJid: [m.sender]
+        }
+    },
+    { quoted: mek }
+);
         await conn.sendMessage(from, {
             audio: { url: 'https://github.com/criss-vevo/CRISS-DATA/raw/refs/heads/main/autovoice/Quran.m4a' },
             mimetype: 'audio/mp4',
